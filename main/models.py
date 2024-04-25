@@ -1,13 +1,27 @@
 from django.db import models
 from django.core.validators import RegexValidator
+from django.utils.text import slugify
 
 
 # Create your models here.
+
+# Define a function to generate slug
+def generate_slug(name):
+    return slugify(name)
+
+
 class DishCategory(models.Model):
     name = models.CharField(max_length=255, unique=True)
-    slug = models.SlugField(max_length=255)
+    slug = models.SlugField(max_length=255, default='', blank=True)
     is_visible = models.BooleanField(default=True)
     sort = models.PositiveSmallIntegerField()
+
+    # Override save method to generate slug automatically
+    def save(self, *args, **kwargs):
+        # If slug is not provided, generate it from name
+        if not self.slug:
+            self.slug = generate_slug(self.name)
+        super().save(*args, **kwargs)
 
     def __iter__(self):
         for dish in self.dishes.filter(is_visible=True):
