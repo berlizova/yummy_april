@@ -39,7 +39,8 @@ class DishCategory(models.Model):
 class RestaurantStaff(models.Model):
     name = models.CharField(max_length=255)
     position = models.CharField(max_length=255)
-    photo = models.ImageField(upload_to='staff_photo/')
+    photo = models.ImageField(upload_to='staff_photo/', blank=True, null=True)
+    bio = models.TextField()  # field for staff biography
     is_visible = models.BooleanField(default=True)
 
     def __str__(self):
@@ -84,9 +85,9 @@ class Gallery(models.Model):
 
 
 class Reservation(models.Model):
-    phone_regex = RegexValidator(regex=r'^\+?(380)?\d{9,15}$',
-                                 message="Phone number must be entered in the format: '+999999999'. Up to 15 digits "
-                                         "allowed.")
+    phone_regex = RegexValidator(regex=r'^\+?\d{9,15}$',
+                                 message="Phone number must be entered in the format: '+999999999'. "
+                                         "Up to 15 digits allowed.")
 
     name = models.CharField(max_length=255)
     phone = models.CharField(max_length=20, validators=[phone_regex])

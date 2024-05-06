@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac264fb9-4fe5-4b44-9141-270c2e9d31e2" name="Changes" comment="" />
+    <list default="true" id="ac264fb9-4fe5-4b44-9141-270c2e9d31e2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main/migrations/0002_gallery_reservation_restaurantstaff_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Apple_Strudel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Beef_Wellington.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Cappuccino.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/ContinentalBreakfast.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Coq_au_Vin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/CroissantSandwich.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Crème_Brûlée.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/EggsBenedict.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Espresso.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Juice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Latte.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Mocha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Seafood_Risotto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Tea_Selection.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Tiramisu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/Vegetable_Moussaka.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/dishes/belgianWaffles.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a9e0b6c-5b5b-423e-8ef8-e59ed68a1ab9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a9e0b6c-5b5b-423e-8ef8-e59ed68a1ab9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,23 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.yummy_april.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="yummy_april" type="Python.DjangoServer" factoryName="Django server">
       <module name="yummy_april" />
@@ -59,6 +86,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="yummy_april.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -93,12 +121,25 @@
       <option name="presentableId" value="Default" />
       <updated>1713964551360</updated>
       <workItem from="1713964584344" duration="3387000" />
-      <workItem from="1714040964381" duration="5284000" />
+      <workItem from="1714040964381" duration="6250000" />
+      <workItem from="1714386626939" duration="9086000" />
+      <workItem from="1714998395142" duration="506000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
